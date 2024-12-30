@@ -22,18 +22,6 @@
 #include <sys/un.h>
 #include "license.h"
 
-typedef struct SliceStruct {
-  char *ptr;
-  size_t len;
-} Slice;
-
-Slice sliceEnv(char *name) {
-  Slice s = {};
-  s.ptr = getenv(name);
-  s.len = strlen(s.ptr);
-  return s;
-};
-
 //
 // This function dertermines the name of the Unix Domain
 // port to use when attempting to connecting to the Wayland
