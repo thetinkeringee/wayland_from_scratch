@@ -11,7 +11,7 @@ add_executable( wfs )
 
 set_target_properties( wfs 
     PROPERTIES
-    C_STANDARD              99 
+    C_STANDARD              23 
     C_STANDARD_REQUIRED     TRUE
     C_EXTENSIONS            FALSE
 )
